@@ -3,10 +3,10 @@ import { FaFacebook, FaGit, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 function FooterPage() {
     const contacts = [
-        {id: 1, name: "Youtube", url: "//youtube.com"},
-        {id: 2, name: "Facebook", url: "//facebook.com"},
-        {id: 3, name: "Git", url: "//github.com"},
-        {id: 4, name: "LinkedIn", url: "//linkedin.com"},
+        {id: 1, name: "Youtube", url: "https://www.youtube.com/watch?v=e4FIuC0l04w&t=76s&ab_channel=codeWithJeancy"},
+        {id: 2, name: "Facebook", url: "https://www.facebook.com/jeancy24Sur.com24/"},
+        {id: 3, name: "Git", url: "https://github.com/TechSupport84"},
+        {id: 4, name: "LinkedIn", url: "https://www.linkedin.com/in/jeancy-mpoyi002/"},
     ];
 
     return (
