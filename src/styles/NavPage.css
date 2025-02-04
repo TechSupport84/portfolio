@@ -1,0 +1,129 @@
+:root {
+    --Background_nav: #29107A;
+    --Color-a: #ffffff;
+    --Body-Background: #170E39;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--Body-Background);
+}
+
+.nav-Container {
+    display: flex;
+    background-color: var(--Background_nav);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.name-home > span {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--Color-a);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Nav-bar {
+    display: flex;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Nav-bar > li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+.Nav-bar > li > a {
+    text-decoration: none;
+    color: var(--Color-a);
+    transition: all 0.3s ease-in-out;
+}
+
+.Nav-bar > li > a:hover {
+    color: #cb9829;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+.right-side {
+    display: flex;
+    margin-left: auto;
+}
+
+.right-side > li {
+    margin: 10px;
+    list-style-type: none;
+}
+
+.right-side > li > a {
+    text-decoration: none;
+    color: var(--Color-a);
+    transition: all 0.3s ease-in-out;
+}
+
+.right-side > li > a:hover {
+    color: #cb9829;
+    text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: var(--Color-a);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+        padding: 10px 20px;
+    }
+
+    .Nav-bar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        background: var(--Background_nav);
+        text-align: center;
+        padding: 10px 20px;
+        transition: 0.3s;
+    }
+
+    .Nav-bar.active {
+        display: flex;
+      
+    }
+    .right-side {
+        display: flex;
+        margin: 10px;
+    }
+
+    .bar.open:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .bar.open:nth-child(2) {
+        opacity: 0;
+    }
+
+    .bar.open:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+    .nav-Container{
+        padding: 10px 20px;
+    }
+}
