@@ -33,11 +33,7 @@ export default function NavPage() {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex shrink-0 items-center">
-              <img
-                alt="jeancy24sur.com"
-                src="/Logo.png"
-                className="h-11 w-auto"
-              />
+              <h3 className ="text-2xl font-bold text-gray-400 "> Jeancy Mpoyi</h3>
             </div>
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex space-x-4">

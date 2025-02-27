@@ -10,7 +10,6 @@ function Introduction() {
         alt="Introduction"
       />
 
-      {/* Introduction Section */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center p-6">
         <h1 className="text-white text-3xl font-bold mb-4 animate-fadeIn">
           Introduction

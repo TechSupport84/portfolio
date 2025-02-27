@@ -7,7 +7,7 @@ function Project() {
   const projects = [
     { id: 1, category: "Web",git:"https://github.com/TechSupport84/serfinweb", name: "www.serfinrecycle.com", url: "https://serfinweb.netlify.app" },
     { id: 2, category: "Mobile",git:"https://github.com/TechSupport84/serfinweb", name: "Serfin", url: "Serfin" },
-    { id: 3, category: "Web",git:"https://github.com/TechSupport84/abonnement", name: "www.abonnementplus.com", url: "https://abonnementplus.netlify.app/" },
+    { id: 3, category: "Web",git:"https://github.com/TechSupport84/dictionary", name: "www.w-language.com", url: "https://w-language.netlify.app" },
     { id: 4, category: "Web",git:"https://github.com/TechSupport84/jeancy24surBackend", name: "www.Jeancy24sur.com", url: "https://jeancy24sur.com" },
     { id: 5, category: "Mobile",git:"https://github.com/TechSupport84/serfinweb", name: "@24hts Medical", url: "Midical App" },
   ];
@@ -17,14 +17,11 @@ function Project() {
 
   return (
     <div className="relative w-full min-h-screen bg-gray-1000 overflow-hidden mt-5">
-      {/* Background Image */}
       <img
         className="absolute top-0 left-0 w-full h-full object-cover opacity-30"
         src="/project.jpg"
         alt="Projects Background"
       />
-
-      {/* Overlay for Contrast */}
       <div className="absolute inset-0 bg-black opacity-40"></div>
 
       {/* Main Content */}
